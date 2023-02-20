@@ -1,5 +1,41 @@
 :root {
-  --font-size-base: 16px;
   --breakpoint-large-min: 768px;
   --breakpoint-large-max: 1440px;
+  
+  --font-size-base: 16px;
+  --font-size-body-small: 0.625rem;
+  --font-size-body: 1rem;
+  --font-size-headline-small: 1.25rem;
+  --font-size-headline-medium: 2rem;
+  --font-size-headline-large: 3rem;
+  --font-size-headline-xlarge: 4rem;
+
+  --spacing-1x: 0.5rem;
+  --spacing-2x: 1rem;
+  --spacing-3x: 1.5rem;
+  --spacing-4x: 2rem;
+  --spacing-5x: 2.5rem;
+  --spacing-6x: 3rem;
+  --spacing-7x: 3.5rem;
+  --spacing-8x: 4rem;
+
+  --color-success: green;
+  --color-warning: red;
+  --color-info: blue;
+  --color-grey-1: white;
+  --color-grey-2: black;
+  --color-grey-3: black;
+  --color-grey-4: black;
+  --color-grey-5: black;
+
+  --color-palette-1: #0c120c;
+  --color-palette-2: #c20114;
+  --color-palette-3: #6d7275;
+  --color-palette-4: #c7d6d5;
+  --color-palette-5: #ecebf3;
+  --color-palette-1-inverse: #FFFFFF;
+  --color-palette-2-inverse: #FFFFFF;
+  --color-palette-3-inverse: #000000;
+  --color-palette-4-inverse: #000000;
+  --color-palette-5-inverse: #000000;
 }

@@ -13,20 +13,108 @@
     <link rel="stylesheet" href="/styles/variables.css">
     <link rel="stylesheet" href="/styles/resets.css">
     <link rel="stylesheet" href="/styles/grid.css">
+    <link rel="stylesheet" href="/styles/a11y.css">
+    <link rel="stylesheet" href="/styles/components.css">
 
     <!-- Include Scripts -->
     <script async src="/scripts/components.js"></script>
 
-    <!-- Critical CSS is included at the top of the page -->
-    <style>
-
-    </style>
   </head>
   <body>
-    <h1>The Science Fiction Review</h1>
-    <div class="container">
-      <div class="col-sm-12 col-lg-6">Here</div>
-      <div class="col-sm-12 col-lg-6">Here</div>
+    <!-- Skip to main content link only shows on keyboard focus for accessibility -->
+    <div class="skip-to-main-content">
+      <a class="" href="#main">Skip to main content</a>
     </div>
+
+    <header class="main-navigation">
+      <div class="container">
+        <div class="col-sm-12 col-lg-2">
+          <a class="inverse" href="/" class="logo">SFR</a>
+        </div>
+        <div class="col-sm-12 col-lg-10">
+          <a class="inverse" href="/reviews/index.html">Reviews</a>
+          <a class="inverse" href="/authors/index.html">Authors</a>
+          <a class="inverse" href="/history.html">History</a>
+          <a class="inverse" href="/goat.html">G.O.A.T.</a>
+        </div>
+      </div>
+    </header>
+    
+    <main id="main">
+      <div class="page-title">
+        <div class="container">
+          <div class="col-sm-12">
+            <h1 class="inverse">The Science Fiction Review</h1>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="container">
+          <div class="col-sm-12">
+            <div class="latest-review">
+              <h2>Latest Review</h2>
+              <h3>Dune - Frank Herbert</h3>
+              <p>Lorum Ipsum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="col-sm-12">
+            <div class="upcoming-reviews">
+              <h2>Upcoming Reviews</h2>
+              <ul>
+                <li>2001 A Space Odyssey</li>
+                <li>2001 A Space Odyssey</li>
+                <li>2001 A Space Odyssey</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="col-sm-12">
+            <div class="featured-author">
+              <h2>Featured Author</h2>
+              <h3>Frank Herbert</h3>
+              <img src="https://placeholder.com/150/300" alt="black and white headshot photo of Frank Herbert">
+              <p>Lorum Ipsum</p>  
+              <a href="/authors/frank-herbert.html">More about Frank Herbert</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sponsors">
+        <h2>Support our Sponsors</h2>
+        <ul>
+          <li>
+            <a href="http://www.example.com">
+              <img src="https://placeholder.com/150/150" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.example.com">
+              <img src="https://placeholder.com/150/150" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.example.com">
+              <img src="https://placeholder.com/150/150" alt="">
+            </a>
+          </li>
+        </ul>
+      </aside>
+      
+    </main>
+
+    <footer>
+      <p>Copyright The Science Fiction Review 2023</p>
+    </footer>
   </body>
 </html>

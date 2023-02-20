@@ -1,0 +1,43 @@
+/*
+Accessibility Styles
+*/
+
+/* Visually hide an element while remaining accessible to a screen reader */
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+}
+
+/* Skip over the main navigation to the main content on the page */
+.skip-to-main-content {
+  display: block;
+  width: 100%;
+  margin: 3px 0 0 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  text-align: center;
+  background: var(--color-success);
+  padding: var(--spacing-1x) 0;
+}
+
+.skip-to-main-content:focus-within {
+  clip: auto;
+  position: relative;
+  pointer-events: auto;
+}
+
+.skip-to-main-content a {
+  text-transform: uppercase;
+  color: var(--color-grey-5);
+  font-size: var(--font-size-headline-small);
+}

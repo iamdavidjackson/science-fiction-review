@@ -1,0 +1,14 @@
+/* Colors */
+.inverse {
+  color: var(--color-palette-1-inverse);
+}
+
+/* Main Navigation */
+.main-navigation {
+  background-color: var(--color-palette-1);
+}
+
+/* Page Title */
+.page-title {
+  background-color: var(--color-palette-2);
+}
