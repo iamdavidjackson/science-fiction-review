@@ -1,0 +1,26 @@
+/* Resets */
+
+html {
+  font-size: var(--font-size-base);
+}
+
+body,
+html,
+ul,
+ol {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-size: 1rem;
+}
