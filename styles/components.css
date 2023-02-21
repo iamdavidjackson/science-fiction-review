@@ -3,6 +3,23 @@
   color: var(--color-palette-1-inverse);
 }
 
+/* Font Sizes */
+.headline-small {
+  font-size: var(--font-size-headline-small);
+}
+
+.headline-medium {
+  font-size: var(--font-size-headline-medium);
+}
+
+.headline-large {
+  font-size: var(--font-size-headline-large);
+}
+
+.headline-xlarge {
+  font-size: var(--font-size-headline-xlarge);
+}
+
 /* Main Navigation */
 .main-navigation {
   background-color: var(--color-palette-1);
@@ -11,4 +28,34 @@
 /* Page Title */
 .page-title {
   background-color: var(--color-palette-2);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-palette-3);
+}
+
+
+/* Feature Author */
+.featured-author__title {
+}
+
+.featured-author__name {
+}
+
+.featured-author__image {
+
+}
+
+.featured-author__description {
+
+}
+
+.featured-author__link {
+
+}
+
+/* Reviews */
+.review-info__cover {
+  width: 300px;
 }
