@@ -7,7 +7,14 @@ html {
 body,
 html,
 ul,
-ol {
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-inline-start: 0;
   margin-inline-end: 0;
   margin-block-start: 0;
@@ -29,4 +36,8 @@ a {
 ul,
 li {
   list-style: none;
+}
+
+img {
+  width: 100%;
 }

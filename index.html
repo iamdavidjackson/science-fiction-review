@@ -11,12 +11,14 @@
     
     <!-- Include Styles -->
     <link rel="stylesheet" href="/styles/variables.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
     <link rel="stylesheet" href="/styles/resets.css">
     <link rel="stylesheet" href="/styles/grid.css">
     <link rel="stylesheet" href="/styles/a11y.css">
     <link rel="stylesheet" href="/styles/components.css">
 
     <!-- Include Scripts -->
+    <script src="/scripts/jquery-3.6.3.min.js"></script>
     <script async src="/scripts/components.js"></script>
 
   </head>
@@ -51,7 +53,7 @@
 
       <div class="container">
         <div class="col-sm-12 col-lg-9">
-          <section>
+          <section class="padding-y-md">
             <div class="latest-review">
               <h2 class="headline-medium">Latest Review</h2>
               <h3 class="headline-small">Dune - Frank Herbert</h3>
@@ -59,24 +61,63 @@
             </div>
           </section>
 
-          <section>
+          <section class="padding-y-md">
             <div class="upcoming-reviews">
               <h2 class="headline-medium">Upcoming Reviews</h2>
-              <ul>
-                <li>2001 A Space Odyssey</li>
-                <li>2001 A Space Odyssey</li>
-                <li>2001 A Space Odyssey</li>
+              <ul class="carousel">
+                <li class="slide">
+                  <img src="/assets/images/hyperion.jpg" />
+                  <p>Dan Simmons</p>
+                  <p>Hyperion</p>
+                  <a href="https://www.amazon.ca">Amazon</a>
+                </li>
+                <li class="slide">
+                  <img src="/assets/images/hyperion.jpg" />
+                  <p>Dan Simmons</p>
+                  <p>Hyperion</p>
+                  <a href="https://www.amazon.ca">Amazon</a>
+                </li>
+                <li class="slide">
+                  <img src="/assets/images/hyperion.jpg" />
+                  <p>Dan Simmons</p>
+                  <p>Hyperion</p>
+                  <a href="https://www.amazon.ca">Amazon</a>
+                </li>
+                <li class="slide">
+                  <img src="/assets/images/hyperion.jpg" />
+                  <p>Dan Simmons</p>
+                  <p>Hyperion</p>
+                  <a href="https://www.amazon.ca">Amazon</a>
+                </li>
+                <li class="slide">
+                  <img src="/assets/images/hyperion.jpg" />
+                  <p>Dan Simmons</p>
+                  <p>Hyperion</p>
+                  <a href="https://www.amazon.ca">Amazon</a>
+                </li>
+                <li class="slide">
+                  <img src="/assets/images/hyperion.jpg" />
+                  <p>Dan Simmons</p>
+                  <p>Hyperion</p>
+                  <a href="https://www.amazon.ca">Amazon</a>
+                </li>
               </ul>
             </div>
           </section>
 
-          <section>
-            <div class="featured-author">
+          <section class="padding-y-md">
+            <div class="featured-author padding-md">
               <h2 class="headline-medium featured-author__title">Featured Author</h2>
-              <h3 class="headline-small featured-author__name">Frank Herbert</h3>
-              <img  class="featured-author__image" src="https://placeholder.com/150/300" alt="black and white headshot photo of Frank Herbert">
-              <p class="featured-author__description">Lorum Ipsum</p>  
-              <a  class="featured-author__link"href="/authors/frank-herbert.html">More about Frank Herbert</a>
+              <div class="container">
+                <div class="col-sm-12 col-lg-4">
+                  <img class="featured-author__image" src="/assets/images/frank-herbert.jpg" alt="black and white headshot photo of Frank Herbert">
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                  <h3 class="headline-small featured-author__name padding-y-bottom-sm">Frank Herbert</h3>
+                  <p class="featured-author__description padding-y-bottom-sm">Frank Herbert's most famous work, Dune, was influenced by a variety of sources, including history, ecology, and religion. The novel is set in a distant future where mankind has spread throughout the galaxy and is ruled by a feudal system. The planet Arrakis, the main setting of the novel, is a desert world that is home to a valuable spice called melange, which gives its users extended life and heightened awareness. The novel explores themes of politics, religion, ecology, and the human experience.</p>
+                  <a class="featured-author__link" href="/authors/frank-herbert.html">More about Frank Herbert</a>
+                </div>
+              </div>
             </div>
           </section>
         </div>
@@ -84,7 +125,7 @@
           <aside class="sponsors">
             <h2>Support our Sponsors</h2>
             <ul>
-              <li>
+              <li class="slide">
                 <a href="http://www.example.com">
                   <img src="https://placeholder.com/150/150" alt="">
                 </a>

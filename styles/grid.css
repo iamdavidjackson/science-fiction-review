@@ -16,6 +16,12 @@ Columns can be offset by any number of columns in either breakpoint.
   max-width: var(--breakpoint-large-max);
 }
 
+/* Nested containers should align instead of indent */
+.container .container {
+  margin-inline-start: -0.5rem;
+  margin-inline-end: 0;
+}
+
 /* add padding to all columns for gutters */
 /* border-box makes widths include padding */
 
@@ -26,7 +32,6 @@ Columns can be offset by any number of columns in either breakpoint.
   padding: 0.5rem;
   box-sizing: border-box;
 }
-
 
 /* column widths for mobile view port */
 
@@ -223,4 +228,85 @@ Columns can be offset by any number of columns in either breakpoint.
   .offset-lg-12 {
     margin-inline-start: 100%;
   }
+}
+
+/* Utility Classes */
+.padding-sm {
+  padding-block-start: var(--spacing-1x);
+  padding-block-end: var(--spacing-1x);
+  padding-inline-start: var(--spacing-1x);
+  padding-inline-end: var(--spacing-1x);
+}
+
+.padding-md {
+  padding-block-start: var(--spacing-2x);
+  padding-block-end: var(--spacing-2x);
+  padding-inline-start: var(--spacing-2x);
+  padding-inline-end: var(--spacing-2x);
+}
+
+.padding-lg {
+  padding-block-start: var(--spacing-4x);
+  padding-block-end: var(--spacing-4x);
+  padding-inline-start: var(--spacing-4x);
+  padding-inline-end: var(--spacing-4x);
+}
+
+.padding-xlg {
+  padding-block-start: var(--spacing-6x);
+  padding-block-end: var(--spacing-6x);
+  padding-inline-start: var(--spacing-6x);
+  padding-inline-end: var(--spacing-6x);
+}
+
+.padding-y-sm {
+  padding-block-start: var(--spacing-1x);
+  padding-block-end: var(--spacing-1x);
+}
+
+.padding-y-md {
+  padding-block-start: var(--spacing-2x);
+  padding-block-end: var(--spacing-2x);
+}
+
+.padding-y-lg {
+  padding-block-start: var(--spacing-4x);
+  padding-block-end: var(--spacing-4x);
+}
+
+.padding-y-xlg {
+  padding-block-start: var(--spacing-6x);
+  padding-block-end: var(--spacing-6x);
+}
+
+.padding-y-top-sm {
+  padding-block-start: var(--spacing-1x);
+}
+
+.padding-y-top-md {
+  padding-block-start: var(--spacing-2x);
+}
+
+.padding-y-top-lg {
+  padding-block-start: var(--spacing-4x);
+}
+
+.padding-y-top-xlg {
+  padding-block-start: var(--spacing-6x);
+}
+
+.padding-y-bottom-sm {
+  padding-block-end: var(--spacing-1x);
+}
+
+.padding-y-bottom-md {
+  padding-block-end: var(--spacing-2x);
+}
+
+.padding-y-bottom-lg {
+  padding-block-end: var(--spacing-4x);
+}
+
+.padding-y-bottom-xlg {
+  padding-block-end: var(--spacing-6x);
 }
