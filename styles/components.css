@@ -44,15 +44,26 @@
 }
 
 /* Upcoming Reviews */
-.upcoming-reviews {
-  overflow: hidden;
+.carousel {
+  width: 100%;
 }
 
-.upcoming-reviews ul {
+.upcoming-reviews .slides,
+.upcoming-reviews .slides-wrapper {
   height: 360px;
 }
 
-.upcoming-reviews li {
+.slides-wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slides {
+  position: absolute;
+}
+
+.upcoming-reviews .slide {
   width: 200px;
   display: inline-block;
 }
