@@ -1,9 +1,13 @@
 $(document).ready(function () {
   
-  const carousels = [];
   $('.carousel').each(function () {
-    carousels.push(new Carousel(this));
+    Carousel(this);
   });
+
+  $('.history-item').each(function () {
+    Animate(this);
+  }); 
+
 });
 
 function Carousel(element) {
@@ -33,14 +37,16 @@ function Carousel(element) {
   }
 
   function addButtons() {
+    const $buttons = $('<div class="buttons"></div>');
     // add prev button to carousel
     const $prevButton = $('<button class="prev-button">Prev</button>');
     $prevButton.click(onClickPrev);
-    $carousel.append($prevButton);
+    $buttons.append($prevButton);
     // add next button to carousel
     const $nextButton = $('<button class="next-button">Next</button>');
     $nextButton.click(onClickNext);
-    $carousel.append($nextButton);
+    $buttons.append($nextButton);
+    $carousel.append($buttons);
   }
 
   function onClickPrev() {
@@ -72,9 +78,15 @@ function Carousel(element) {
 
     $slides.css({ left: currentOffset + 'px' });
   }
+  
+  function reset() {
+    currentOffset = 0;
+    $slides.css({ left: currentOffset + 'px' });
+  }
 
   function onResize() {
     setWidths();
+    reset();
   }
 
   function addEventListeners() {
@@ -91,4 +103,25 @@ function Carousel(element) {
 
   init();
   
+}
+
+function Animate(element) {
+  const $element = $(element);
+
+  function onIntersecting(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(onIntersecting, {
+    rootMargin: '0px',
+    threshold: 0.5,
+  });
+
+  observer.observe($element[0]);
 }

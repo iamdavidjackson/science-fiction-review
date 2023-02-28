@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/styles/components.css">
 
     <!-- Include Scripts -->
+    <script src="/scripts/jquery-3.6.3.min.js"></script>
     <script async src="/scripts/components.js"></script>
 
   </head>
@@ -30,13 +31,17 @@
     <header class="main-navigation">
       <div class="container">
         <div class="col-sm-12 col-lg-2">
-          <a class="inverse" href="/" class="logo">SFR</a>
+          <a class="inverse" href="/" class="logo">
+            <img src="/assets/images/logo.png" />
+          </a>
         </div>
         <div class="col-sm-12 col-lg-10">
-          <a class="inverse" href="/reviews/index.html">Reviews</a>
-          <a class="inverse" href="/authors/index.html">Authors</a>
-          <a class="inverse" href="/history.html">History</a>
-          <a class="inverse" href="/goat.html">G.O.A.T.</a>
+          <div class="right-links">
+            <a class="inverse" href="/reviews/index.html">Reviews</a>
+            <a class="inverse" href="/authors/index.html">Authors</a>
+            <a class="inverse" href="/history.html">History</a>
+            <a class="inverse" href="/goat.html">G.O.A.T.</a>
+          </div>
         </div>
       </div>
     </header>
@@ -45,22 +50,18 @@
       <div class="page-title">
         <div class="container">
           <div class="col-sm-12">
-            <h1 class="inverse">Dune</h1>
+            <h1 class="inverse headline-large">Dune <span class="headline-small">By Frank Herbert - 1973</span></h1>
           </div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="col-sm-12 col-lg-9">
+      <div class="container review">
+        <div class="col-sm-12 col-lg-3">
+          <img src="/assets/images/dune.webp" alt="Dune book cover" />
+        </div>
+        <div class="col-sm-12 col-lg-6">
           <section>
-            <div class="review-info">
-              <img class="review-info__cover" src="/assets/images/dune.png" alt="Dune book cover">
-              <dl>
-                <li>Author: Frank Herbert</li>
-                <li>Published: 1973</li>
-              </dl>
-            </div>
-            <p class="review-intro">
+            <p>
               Dune by Frank Herbert is a classic science fiction novel that has stood the test of time. The novel is set in a distant future where humanity has colonized the galaxy, and follows the story of Paul Atreides, a young nobleman who becomes embroiled in a power struggle on the desert planet of Arrakis.
             </p>
           </section>

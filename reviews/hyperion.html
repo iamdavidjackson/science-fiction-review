@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/styles/components.css">
 
     <!-- Include Scripts -->
+    <script src="/scripts/jquery-3.6.3.min.js"></script>
     <script async src="/scripts/components.js"></script>
 
   </head>
@@ -30,13 +31,17 @@
     <header class="main-navigation">
       <div class="container">
         <div class="col-sm-12 col-lg-2">
-          <a class="inverse" href="/" class="logo">SFR</a>
+          <a class="inverse" href="/" class="logo">
+            <img src="/assets/images/logo.png" />
+          </a>
         </div>
         <div class="col-sm-12 col-lg-10">
-          <a class="inverse" href="/reviews/index.html">Reviews</a>
-          <a class="inverse" href="/authors/index.html">Authors</a>
-          <a class="inverse" href="/history.html">History</a>
-          <a class="inverse" href="/goat.html">G.O.A.T.</a>
+          <div class="right-links">
+            <a class="inverse" href="/reviews/index.html">Reviews</a>
+            <a class="inverse" href="/authors/index.html">Authors</a>
+            <a class="inverse" href="/history.html">History</a>
+            <a class="inverse" href="/goat.html">G.O.A.T.</a>
+          </div>
         </div>
       </div>
     </header>
@@ -45,22 +50,18 @@
       <div class="page-title">
         <div class="container">
           <div class="col-sm-12">
-            <h1 class="inverse">Hyperion</h1>
+            <h1 class="inverse headline-large">Hyperion <span class="headline-small">By Dan Simmons</span></h1>
           </div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="col-sm-12 col-lg-9">
+      <div class="container review">
+        <div class="col-sm-12 col-lg-3">
+          <img src="/assets/images/hyperion.jpg" alt="Hyperion book cover" />
+        </div>
+        <div class="col-sm-12 col-lg-6">
           <section>
-            <div class="review-info">
-              <img class="review-info__cover" src="/assets/images/hyperion.jpg" alt="Hyperion book cover">
-              <dl>
-                <li>Author: Dan Simmons</li>
-                <li>Published: 1989</li>
-              </dl>
-            </div>
-            <p class="review-intro">
+            <p>
               Hyperion by Dan Simmons is a science fiction novel that explores a distant future where mankind has colonized the galaxy, and the Hegemony of Man governs all. The novel follows seven pilgrims on a journey to the Time Tombs on the planet Hyperion, each with their own secrets and reasons for making the journey.
             </p>
           </section>

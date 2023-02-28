@@ -33,9 +33,31 @@
   background-color: var(--color-palette-1);
 }
 
+.main-navigation .right-links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.main-navigation .right-links a {
+  margin-inline-start: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-navigation .right-links a:hover {
+  color: var(--color-palette-4);
+  text-decoration: underline;
+}
+
 /* Page Title */
 .page-title {
   background-color: var(--color-palette-2);
+  padding-block-start: var(--spacing-6x);
+  padding-block-end: var(--spacing-6x);
 }
 
 /* Footer */
@@ -50,12 +72,12 @@
 
 .upcoming-reviews .slides,
 .upcoming-reviews .slides-wrapper {
-  height: 360px;
+  height: 400px;
 }
 
 .slides-wrapper {
   overflow: hidden;
-  margin: 0 auto;
+  margin: var(--spacing-1x) auto;
   position: relative;
 }
 
@@ -66,6 +88,19 @@
 .upcoming-reviews .slide {
   width: 200px;
   display: inline-block;
+}
+
+.upcoming-reviews .title {
+  height: var(--spacing-6x);
+}
+
+.upcoming-reviews .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.upcoming-reviews .buttons button {
+  margin: var(--spacing-1x);
 }
 
 /* Feature Author */
@@ -81,6 +116,58 @@
 }
 
 /* Reviews */
-.review-info__cover {
-  width: 300px;
+.review section {
+  margin-block-end: var(--spacing-3x);
 }
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  background-color: var(--color-palette-3);
+}
+
+.history-item {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.history-item:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-palette-2);
+  position: absolute;
+  left: 192px;
+  border-radius: var(--border-radius-full);
+  z-index: 2;
+  top: 24px;
+}
+
+.history-item.right {
+  align-items: flex-end;
+}
+
+.history-content {
+  transition: transform 1s ease-in-out;
+}
+
+.history-item.active .history-content {
+  transform: translateX(var(--spacing-6x));
+}
+
+.history-item.right.active .history-content {
+  transform: translateX(calc(var(--spacing-6x) * -1));
+}
+
