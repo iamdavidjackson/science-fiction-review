@@ -120,6 +120,23 @@
   margin-block-end: var(--spacing-3x);
 }
 
+.review-card a {
+  border: 1px var(--color-grayscale-300) solid;
+  border-radius: var(--border-radius-medium);
+  filter: drop-shadow(0 0 8px var(--color-grayscale-400));
+  background-color: var(--color-grayscale-100);
+  padding: var(--spacing-1x);
+}
+
+.review-card a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.review-card a:hover {
+  border: 2px var(--color-palette-2) solid;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -161,6 +178,25 @@
 
 .history-content {
   transition: transform 1s ease-in-out;
+  width: 120px;
+}
+
+.history-item.event {
+  z-index: 2;
+}
+
+.history-item.event:after {
+  display: none;
+}
+
+.history-event-content {
+  text-align: center;
+  margin-block-start: var(--spacing-2x);
+  margin-block-end: var(--spacing-2x);
+  background: var(--color-palette-4);
+  border-radius: var(--spacing-1x);
+  padding: var(--spacing-1x);
+  border: 1px var(--color-palette-2) solid;
 }
 
 .history-item.active .history-content {
