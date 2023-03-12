@@ -33,6 +33,10 @@
   background-color: var(--color-palette-1);
 }
 
+.main-navigation .logo img {
+  max-width: 200px;
+}
+
 .main-navigation .right-links {
   display: flex;
   justify-content: end;
@@ -51,6 +55,16 @@
 .main-navigation .right-links a:hover {
   color: var(--color-palette-4);
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .main-navigation {
+    text-align: center;
+  }
+
+  .main-navigation .right-links {
+    justify-content: center;
+  }
 }
 
 /* Page Title */
@@ -114,6 +128,39 @@
 .featured-author__title {
   text-transform: uppercase;
 }
+
+/* Sponsors */
+
+.sponsors__sponsor {
+  margin-bottom: var(--spacing-4x);
+}
+
+/* Authors */
+.author-card__image {
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+}
+
+.author-card__name {
+  text-transform: uppercase;
+  margin-top: var(--spacing-1x);
+}
+
+.author__info img {
+  max-width: 300px;
+}
+
+.author__about,
+.author__bibliography,
+.author__more-info {
+  margin-bottom: var(--spacing-3x);
+}
+
+.author__more-info p {
+  margin-bottom: var(--spacing-2x);
+}
+
 
 /* Reviews */
 .review section {
